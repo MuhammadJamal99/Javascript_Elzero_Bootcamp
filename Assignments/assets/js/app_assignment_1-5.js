@@ -1,0 +1,1 @@
+console.table(["Elzero","Jika","Sleim","Punk","Islam"]);

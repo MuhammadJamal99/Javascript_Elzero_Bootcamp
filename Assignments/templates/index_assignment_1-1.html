@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="../assets/Images/Js.ico" type="image/x-icon">
     <title>Assignment 1-1</title>
     <script>
         // Code One
+        // This will not work because of window doesnot load the element yet 
         document.getElementById("el").style.color = "red";
     </script>
     <script>
         // Code Two
+        // This will work because of window load before code execution
         window.onload = function () {
             document.getElementById("el").style.color = "red";
         };
@@ -19,6 +22,7 @@
     <h1 id="el">Page Title</h1>
     <script>
         // Code Three
+        // This will work because of the script tag but after all window element is loaded
         document.getElementById("el").style.color = "red";
     </script>
 </body>
